@@ -1,0 +1,4 @@
+ai21
+python-dotenv
+pandas
+numpy
