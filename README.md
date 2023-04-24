@@ -1,3 +1,7 @@
+# API key
+API key is stored in .envrc file. This is read in with the main python code.
+See `.envrc.template` for example
+
 # Working prompt
 
 The prompt below seems to work well at forcing Jurassic 2 Grande Instruct model
@@ -16,3 +20,4 @@ Choose the track to run the train on:
 
 Answer with the track number (1 or 2). One track number only:
 ```
+
