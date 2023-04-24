@@ -1,0 +1,8 @@
+name: ai21_hackathon
+channels:
+- conda-forge
+- defaults
+dependencies:
+- pandas
+ 
+

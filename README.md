@@ -1,6 +1,9 @@
+# Dependencies
+Managed by `requirements.yml` file and Conda
+
 # API key
 API key is stored in .envrc file. This is read in with the main python code.
-See `.envrc.template` for example
+See `.envrc.template` for example. `direnv` can be used to load it to an environment variable
 
 # Working prompt
 
