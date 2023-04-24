@@ -8,7 +8,6 @@ load_dotenv()
 ai21.api_key = os.getenv("AI21_API_KEY")
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-
 def tie_up(prompt, track1, track2):
     return prompt.replace('[__track1__]', track1).replace('[__track2__]', track2)
 

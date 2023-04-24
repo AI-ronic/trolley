@@ -5,4 +5,9 @@ channels:
 dependencies:
 - pandas
 - requests 
+- notebook
+- pip
+- pip:
+  - ai21
+  - openai
 
