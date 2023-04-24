@@ -20,6 +20,6 @@ def parse_raw_response(raw_response):
         return 'err'
 
 # Read in output/rekt.csv file
-df = pd.read_csv("./output/rekt.csv",index_col=0)
+df = pd.read_csv("./output/rekt.csv",index_col=0,names=['choice1','choice2','response'])
 df['kill'] = df['response'].apply(parse_raw_response)
 df.to_csv("./output/parsed_data.csv",header=True)
