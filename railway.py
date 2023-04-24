@@ -18,7 +18,7 @@ except FileNotFoundError:
     prev_results = pd.DataFrame(columns=["choice1", "choice2", "response"])
     prev_permutations = set()
 
-with open("prompt/candidate.csv", "r") as f:
+with open("prompt/candidate_all.csv", "r") as f:
 # with open("prompt/candidate_test.csv", "r") as f:
     candidate = f.read().split('\n')
 
