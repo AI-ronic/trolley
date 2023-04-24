@@ -1,0 +1,5 @@
+# AI21 key
+export api_key=1234
+
+# AI 21 api_endpoint
+export api_endpoint="https://api.ai21.com/studio/v1/{model_type}/{model_name}/complete"
