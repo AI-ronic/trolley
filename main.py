@@ -40,8 +40,8 @@ class ai21_model:
   @staticmethod
   def parse_raw_response(raw_response):
     interested_in = ['1', '2']
-    # Find all occurrences of 1 and 2 in raw_response
-    for answer in interested_in:
+    # Find all occurrences members of interested_in in raw_response
+    
     matches = re.findall("[12]", raw_response)
 
     # Count the number of occurrences of 1 and 2

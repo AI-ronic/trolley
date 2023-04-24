@@ -1,11 +1,17 @@
-# Dependencies
+# How to run
+- `railway.py` main file to get results from AI21
+- `parse_raw_output.py` parse AI21 output to either `1` or `2`
+
+
+# Ignore Everything underneath
+## Dependencies
 Managed by `requirements.yml` file and Conda
 
-# API key
+## API key
 API key is stored in .envrc file. This is read in with the main python code.
 See `.envrc.template` for example. `direnv` can be used to load it to an environment variable
 
-# Working prompt
+## Working prompt
 
 The prompt below seems to work well at forcing Jurassic 2 Grande Instruct model
 to respond.

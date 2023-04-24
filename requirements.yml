@@ -6,6 +6,7 @@ dependencies:
 - pandas
 - requests 
 - notebook
+- load_dotenv
 - pip
 - pip:
   - ai21
