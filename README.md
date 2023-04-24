@@ -2,6 +2,11 @@
 - `railway.py` main file to get results from AI21
 - `parse_raw_output.py` parse AI21 output to either `1` or `2`
 
+```
+python railway.py
+python parse_raw_output.py
+```
+
 
 # Ignore Everything underneath
 ## Dependencies
