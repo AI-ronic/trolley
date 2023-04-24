@@ -6,7 +6,7 @@ import pandas as pd
 with open("prompt/trolley.txt", "r") as f:
     prompt = f.read()
 
-with open("prompt/candidate.csv", "r") as f:
+with open("prompt/candidate_all.csv", "r") as f:
 # with open("prompt/candidate_test.csv", "r") as f:
     candidate = f.read().split('\n')
 
