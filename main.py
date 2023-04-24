@@ -22,6 +22,20 @@ class ai21_model:
     self.api_key = api_key
     print(f'Using API endpoint: {self.api_endpoint}')
 
+  def get_model_response(self, prompt, num_results=1, max_tokens=64, temperature=0.7, top_k_return=0):
+    response = requests.post(
+      self.api_endpoint,
+      headers={"Authorization": f"Bearer {self.api_key}"},
+      json={
+        "prompt": prompt,
+        "numResults": num_results,
+        "maxTokens": max_tokens,
+        "temperature": temperature,
+        "topKReturn": top_k_return
+      }
+    )
+    return response.json()
+
 
 # Helper functions
 def get_api_key():
