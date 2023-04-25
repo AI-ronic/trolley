@@ -2,3 +2,4 @@ ai21
 python-dotenv
 pandas
 numpy
+firebase-admin
