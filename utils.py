@@ -66,12 +66,12 @@ def call_ai21(prompt, model_name="j2-jumbo-instruct"):
     ))
 
 
-def cleanup_oai(oai_result):
+def cleanup_oai_complete(oai_result):
     return oai_result['choices'][0]['text'].replace('/n', ' ').replace(",", " ").strip()
 
 
 def call_openai_complete(prompt, model_name="text-davinci-003"):
-    return cleanup_oai(openai.Completion.create(
+    return cleanup_oai_complete(openai.Completion.create(
         model=model_name,
         prompt=prompt,
         temperature=0,
@@ -82,8 +82,12 @@ def call_openai_complete(prompt, model_name="text-davinci-003"):
     ))
 
 
+def cleanup_oai_chat(oai_result):
+    return oai_result['choices'][0]['message']['content'].replace('/n', ' ').replace(",", " ").strip()
+
+
 def call_openai_chat(prompt, model_name="gpt-3.5-turbo"):
-    return cleanup_oai(openai.ChatCompletion.create(
+    return cleanup_oai_chat(openai.ChatCompletion.create(
         model=model_name,
         messages=[
             {"role": 'system', "content": "you are a good person"},
@@ -118,4 +122,3 @@ def mark_task_done(task):
 
 def task_name(model_name, main_track):
     return f'{model_name}_{main_track}'
-
