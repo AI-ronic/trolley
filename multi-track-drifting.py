@@ -4,7 +4,7 @@ import random
 import time
 from tqdm import tqdm
 
-target_model = "j2-jumbo-instruct"
+target_model = "text-davinci-003"
 n_sample = 100
 output_root = "./multi-track/output/"
 
@@ -53,4 +53,4 @@ for main_track in candidate:
         print(result)
 
     print(f"task {task_name} finished in {time.time() - st} seconds")
-    utils.mark_task_end(task_name)
+    utils.mark_task_done(task_name)
